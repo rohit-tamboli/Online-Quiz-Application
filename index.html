@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Login -->
+    <div class="step active" id="stepLogin">
+      <div class="card">
+        <h1>🚀 Welcome to the Quiz</h1>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button id="nextName">Continue</button>
+        <button id="guestBtn" class="ghost">Play as Guest</button>
+      </div>
+    </div>
+    <!-- Amount -->
+    <div class="step" id="stepAmount">
+      <div class="card">
+        <h1>Number of Questions</h1>
+        <input type="number" id="amount" min="1" max="50" value="10">
+        <button id="nextAmount">Next</button>
+      </div>
+    </div>
+    <!-- Category -->
+    <div class="step" id="stepCategory">
+      <div class="card">
+        <h1>Choose Category</h1>
+        <select id="category">
+          <option value="">Any Category</option>
+        </select>
+        <button id="nextCategory">Next</button>
+      </div>
+    </div>
+    <!-- Difficulty -->
+    <div class="step" id="stepDifficulty">
+      <div class="card">
+        <h1>Difficulty</h1>
+        <select id="difficulty">
+          <option value="">Any</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <button id="nextDifficulty">Next</button>
+      </div>
+    </div>
+    <!-- Type -->
+    <div class="step" id="stepType">
+      <div class="card">
+        <h1>Question Type</h1>
+        <select id="type">
+          <option value="">Any</option>
+          <option value="multiple">Multiple Choice</option>
+          <option value="boolean">True / False</option>
+        </select>
+        <button id="nextType">Next</button>
+      </div>
+    </div>
+    <!-- Start -->
+    <div class="step" id="stepStart">
+      <div class="card">
+        <h1>Summary</h1>
+        <div id="summary"></div>
+        <button id="startQuizBtn">Start Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
